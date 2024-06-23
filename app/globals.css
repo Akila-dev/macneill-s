@@ -46,16 +46,16 @@ body {
 }
 
 h3 {
-	@apply font-light text-lg tracking-wider;
+	@apply font-light text-sm md:text-lg tracking-wider leading-[120%];
 }
 
 p {
-	@apply font-light text-sm;
+	@apply font-light text-xs md:text-sm leading-[120%];
 }
 
 .btn-1,
 .btn-2 {
-	@apply py-2 px-5 uppercase text-base font-semibold border;
+	@apply py-2 px-5 uppercase text-sm md:text-base font-semibold border w-full max-w-[200px];
 }
 
 .btn-1 {
