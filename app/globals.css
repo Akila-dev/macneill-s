@@ -14,7 +14,7 @@
 }
 
 * {
-	box-sizing: border-box;
+	box-sizing: border-box !important;
 	padding: 0;
 	margin: 0;
 	scroll-behavior: smooth;
@@ -34,12 +34,37 @@
 body {
 	font-family: var(--font-base);
 	width: 100% !important;
-	height: 100vh !important;
+	height: 100% !important;
 	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 @layer utilities {
 	.text-balance {
 		text-wrap: balance;
 	}
+}
+
+h3 {
+	@apply font-light text-lg tracking-wider;
+}
+
+p {
+	@apply font-light text-sm;
+}
+
+.btn-1,
+.btn-2 {
+	@apply py-2 px-5 uppercase text-base font-semibold border;
+}
+
+.btn-1 {
+	@apply bg-[--highlight] hover:bg-[--bg] hover:text-[--highlight] text-[--bg] border-[--highlight];
+}
+
+.btn-2 {
+	@apply text-[--white] border-[--highlight] hover:bg-[--white] hover:text-[--bg];
+}
+.container {
+	@apply px-5 md:px-[4rem] lg:px-[4rem] w-full max-w-[1240px] mx-auto;
 }
